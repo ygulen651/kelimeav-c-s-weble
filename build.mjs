@@ -77,7 +77,7 @@ function stopsHtml() {
 
 // ---------- geliştirenler ----------
 function creditsHtml() {
-  return config.credits.map((c) => `<a class="credit credit--${c.theme}" href="${esc(c.url)}" rel="noopener" aria-label="${esc(c.name)} (yeni sitede açılır)" target="_blank">
+  return config.credits.map((c) => `<a class="${c.theme.split(' ').map((t) => `credit--${t}`).join(' ')} credit" href="${esc(c.url)}" rel="noopener" aria-label="${esc(c.name)} (yeni sitede açılır)" target="_blank">
       <img src="${esc(c.logo)}" alt="${esc(c.name)}" width="${c.width}" height="${c.height}" loading="lazy">
     </a>`).join('');
 }

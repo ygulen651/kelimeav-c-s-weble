@@ -17,7 +17,7 @@
   },
 
   "developer": {
-    "name": "KARTAP & Entek Digital",
+    "name": "KARTAP, Entek Digital & UGI",
     "legalName": "[Ticari unvan veya ad soyad]",
     "address": "[Tebligat adresi]",
     "city": "Karaman",
@@ -26,7 +26,8 @@
 
   "credits": [
     { "name": "KARTAP — Karaman Tanıtım ve Turizm Derneği", "url": "https://kartap.org/", "logo": "/assets/img/kartap.png", "width": 640, "height": 146, "theme": "light" },
-    { "name": "Entek Digital", "url": "https://www.entekdigital.com/", "logo": "/assets/img/entek-digital.png", "width": 341, "height": 62, "theme": "dark" }
+    { "name": "Entek Digital", "url": "https://www.entekdigital.com/", "logo": "/assets/img/entek-digital.png", "width": 341, "height": 62, "theme": "dark" },
+    { "name": "UGI", "url": "https://www.ugi.net.tr/", "logo": "/assets/img/ugi.png", "width": 240, "height": 186, "theme": "dark tall" }
   ],
 
   "contact": {
