@@ -59,6 +59,8 @@ Derleyici her çalıştığında şunları listeler:
 
 **Netlify / Cloudflare Pages (önerilir):** Build komutu `node build.mjs`, yayın klasörü `dist`. `dist/_headers` dosyası güvenlik başlıklarını (HSTS, CSP vb.) otomatik uygular. Alan adınızı bağlayıp HTTPS'i açın.
 
+**Vercel:** Ayarlar `vercel.json` dosyasında hazır (build komutu, `dist` klasörü, güvenlik başlıkları). Repoyu bağlamanız yeterli. Formspree dışında bir form hizmeti kullanırsanız `vercel.json` içindeki Content-Security-Policy satırına o hizmetin adresini ekleyin.
+
 **GitHub Pages / klasik hosting:** `dist/` içeriğini yükleyin. `_headers` dosyası bu ortamlarda çalışmaz; güvenlik başlıklarını sunucu ayarlarından ekleyin. 404 sayfası `404.html`'dir.
 
 Yayından sonra:
