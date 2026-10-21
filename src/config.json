@@ -1,0 +1,82 @@
+{
+  "_not": "Sitedeki değiştirilebilir bilgilerin tamamı bu dosyadadır. Değiştirdikten sonra `node build.mjs` çalıştırın. Boş bırakılan mağaza bağlantıları sitede 'Yakında' olarak görünür.",
+
+  "site": {
+    "url": "https://kelimeavcisi.example",
+    "lang": "tr",
+    "name": "Kelime Avcısı",
+    "tagline": "Karaman'da kelime avına çık!",
+    "description": "Kelime Avcısı, Karaman'ın tarihî duraklarını gezerken QR kodları okutup eski kelimelerin anlamını bulduğun, puan ve rozet topladığın bir keşif oyunudur.",
+    "themeColor": "#007B79",
+    "lastUpdated": "2026-10-21"
+  },
+
+  "stores": {
+    "appStore": "",
+    "googlePlay": ""
+  },
+
+  "developer": {
+    "name": "KARTAP & Entek Digital",
+    "legalName": "[Ticari unvan veya ad soyad]",
+    "address": "[Tebligat adresi]",
+    "city": "Karaman",
+    "website": ""
+  },
+
+  "credits": [
+    { "name": "KARTAP — Karaman Tanıtım ve Turizm Derneği", "url": "https://kartap.org/", "logo": "/assets/img/kartap.png", "width": 640, "height": 146, "theme": "light" },
+    { "name": "Entek Digital", "url": "https://www.entekdigital.com/", "logo": "/assets/img/entek-digital.png", "width": 341, "height": 62, "theme": "dark" }
+  ],
+
+  "contact": {
+    "email": "destek@kelimeavcisi.example",
+    "kvkkEmail": "destek@kelimeavcisi.example",
+    "responseTime": "en geç 5 iş günü içinde",
+    "formEndpoint": ""
+  },
+
+  "_stops_not": "Durak eklemek için listeye yeni satır ekleyin; sitedeki rota otomatik uzar. moreStopsComing: true iken sonda 'Yeni duraklar yolda' kartı görünür.",
+  "moreStopsComing": true,
+  "stops": [
+    { "no": 1, "name": "Karaman Kalesi" },
+    { "no": 2, "name": "Hatuniye Medresesi" },
+    { "no": 3, "name": "Aktekke Camii" },
+    { "no": 4, "name": "Hürrem Dayı Evi" }
+  ],
+
+  "faq": [
+    {
+      "q": "Kelime Avcısı nedir?",
+      "a": "Karaman'daki tarihî durakları sırayla gezdiğin bir keşif oyunudur. Her durakta bir QR kodu okutursun, karşına çıkan tarihî kelimenin anlamını bulursun; doğru cevaplarla puan, tamamladığın duraklarla rozet kazanırsın."
+    },
+    {
+      "q": "Oynamak için hesap açmam gerekiyor mu?",
+      "a": "Hayır. “Hesapsız Keşfe Başla” ile şifre veya e-posta girmeden başlayabilirsin; ilerlemen anonim oturumunla bulutta saklanır. İstersen Apple veya Google hesabınla da giriş yapabilirsin."
+    },
+    {
+      "q": "QR kodları nerede, duraklar nasıl açılıyor?",
+      "a": "Her durağın kendi QR kodu vardır ve durak yalnızca kendi koduyla açılır. Duraklar sırayla açılır: bir sonraki durak, öncekini tamamladığında kilidini kaldırır. Kod ve durak sırası sunucuda doğrulanır. Kamera açılamazsa kod metnini elle de girebilirsin."
+    },
+    {
+      "q": "Puanlama nasıl işliyor?",
+      "a": "Her soruda en fazla 100 puan kazanabilirsin. İpucu almak 20 puan, her yanlış cevap 10 puan düşürür. Bir sorudan alınabilecek en düşük puan 0'dır."
+    },
+    {
+      "q": "İnternet bağlantısı olmadan oynayabilir miyim?",
+      "a": "Bağlantı yokken uygulama son kaydedilen rotayı göstermeye devam eder. Kodların doğrulanması ve rotadaki güncellemeler için internet bağlantısı gerekir."
+    },
+    {
+      "q": "Uygulama kameramı ne için kullanıyor?",
+      "a": "Kamera yalnızca QR kodu okutma ekranında, kodu okumak için kullanılır."
+    },
+    {
+      "q": "Profilimdeki adım kimler tarafından görülüyor?",
+      "a": "Profilde yazdığın ad, ilerlemenle birlikte etkinliği yürüten yöneticilerin panelinde görünür. Adını profil ekranındaki kalem simgesiyle istediğin zaman değiştirebilirsin."
+    },
+    {
+      "q": "Hesabımı ve verilerimi nasıl silebilirim?",
+      "a": "Hesap ve veri silme adımlarını <a href=\"/hesap-silme/\">Hesap ve Veri Silme</a> sayfasında bulabilirsin."
+    }
+  ]
+}

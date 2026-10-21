@@ -1,0 +1,91 @@
+---
+title: Destek ve İletişim
+description: Kelime Avcısı ile ilgili sorun, soru ve önerilerin için bize ulaş. Destek e-postası, iletişim formu ve sık sorulan sorular.
+path: /destek/
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Destek / iletişim</p>
+    <h1>Sana nasıl yardım edebiliriz?</h1>
+    <p>Kod okutma, giriş, puanlar veya bir durakla ilgili sorun mu yaşıyorsun? Önce aşağıdaki sorulara göz at, cevabını bulamazsan bize yaz.</p>
+  </div>
+</section>
+
+<div class="wrap support-grid">
+  <section class="panel" aria-labelledby="form-baslik">
+    <h2 id="form-baslik">Bize yaz</h2>
+    {{#if hasFormEndpoint}}<p>Mesajın doğrudan destek ekibimize ulaşır. Sana {{contact.responseTime}} dönüş yaparız.</p>{{else}}<p>Formu doldurduğunda mesajın e-posta uygulamanda hazırlanır; göndermek için orada “Gönder”e dokunman yeterli. Sana {{contact.responseTime}} dönüş yaparız.</p>{{/if}}
+
+    <form class="form" data-contact-form data-endpoint="{{contact.formEndpoint}}" data-email="{{contact.email}}" novalidate>
+      <div class="field">
+        <label for="f-ad">Adın</label>
+        <input id="f-ad" name="name" type="text" autocomplete="name" required aria-describedby="f-ad-hata">
+        <p class="field__err" id="f-ad-hata" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="f-eposta">E-posta adresin</label>
+        <input id="f-eposta" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-eposta-hata">
+        <p class="field__err" id="f-eposta-hata" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="f-konu">Konu</label>
+        <select id="f-konu" name="topic" required aria-describedby="f-konu-hata">
+          <option value="">Seç…</option>
+          <option>QR kod okutma</option>
+          <option>Giriş ve hesap</option>
+          <option>Puan ve rozetler</option>
+          <option>Harita ve duraklar</option>
+          <option>Hesap / veri silme</option>
+          <option>Öneri</option>
+          <option>Diğer</option>
+        </select>
+        <p class="field__err" id="f-konu-hata" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="f-cihaz">Cihaz ve uygulama sürümü <span class="opt">(isteğe bağlı)</span></label>
+        <input id="f-cihaz" name="device" type="text" placeholder="ör. iPhone 13, iOS 18 · Kelime Avcısı 1.0">
+      </div>
+      <div class="field">
+        <label for="f-mesaj">Mesajın</label>
+        <textarea id="f-mesaj" name="message" required aria-describedby="f-mesaj-hata"></textarea>
+        <p class="field__err" id="f-mesaj-hata" aria-live="polite"></p>
+      </div>
+      <div class="hp" aria-hidden="true">
+        <label for="f-gotcha">Bu alanı boş bırak</label>
+        <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <p class="form__hint">Yazdıkların yalnızca talebini yanıtlamak için kullanılır. Ayrıntılar: <a href="/gizlilik/#site">Gizlilik Politikası</a>.</p>
+      <div>
+        <button class="btn btn--primary" type="submit">{{#if hasFormEndpoint}}Mesajı gönder{{else}}E-posta ile gönder{{/if}}</button>
+      </div>
+      <p class="status" data-status role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <aside>
+    <div class="mail-card">
+      <h2>Doğrudan e-posta</h2>
+      <p>Formu kullanmak istemezsen bize doğrudan yazabilirsin.</p>
+      <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+    </div>
+    <div class="tips">
+      <h2>Daha hızlı yardım için</h2>
+      <ul>
+        <li>Sorunu yaşadığın ekranı ve durağı yaz.</li>
+        <li>Mümkünse ekran görüntüsü ekle.</li>
+        <li>Cihaz modelini ve uygulama sürümünü belirt.</li>
+        <li>Hesap konularında profilinde görünen adı yaz.</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<section class="section" aria-labelledby="sss-baslik">
+  <div class="wrap wrap--narrow">
+    <header class="section__head section__head--center">
+      <p class="eyebrow">Sık sorulan sorular</p>
+      <h2 id="sss-baslik">Belki cevabı buradadır</h2>
+    </header>
+    {{{faqHtml}}}
+  </div>
+</section>

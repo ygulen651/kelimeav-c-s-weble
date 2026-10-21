@@ -1,0 +1,48 @@
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="/">
+        <img src="/assets/img/puhu.png" alt="" width="40" height="43" loading="lazy">
+        <span>{{site.name}}</span>
+      </a>
+      <p>Karaman'ın tarihî duraklarında kelime avı.</p>
+    </div>
+    <div>
+      <h2 class="footer__title">Uygulama</h2>
+      <ul>
+        <li><a href="/#ozellikler">Özellikler</a></li>
+        <li><a href="/#nasil-calisir">Nasıl çalışır?</a></li>
+        <li><a href="/#indir">İndir</a></li>
+        <li><a href="/hakkinda/">Hakkında</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer__title">Yardım ve hukuki</h2>
+      <ul>
+        <li><a href="/destek/">Destek ve iletişim</a></li>
+        <li><a href="/gizlilik/">Gizlilik Politikası / KVKK</a></li>
+        <li><a href="/kullanim-kosullari/">Kullanım Koşulları</a></li>
+        <li><a href="/hesap-silme/">Hesap ve Veri Silme</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer__title">İletişim</h2>
+      <address>
+        <strong>{{developer.name}}</strong><br>
+        {{developer.city}}<br>
+        <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+        {{#if hasDeveloperSite}}<br><a href="{{developer.website}}" rel="noopener">{{developer.website}}</a>{{/if}}
+      </address>
+    </div>
+  </div>
+  <div class="wrap footer__credits">
+    <p class="footer__title">Geliştirenler</p>
+    <div class="credits">
+      {{{creditsHtml}}}
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <p>© {{year}} {{developer.name}}. Tüm hakları saklıdır.</p>
+    <p>Bu site çerez veya izleme aracı kullanmaz.</p>
+  </div>
+</footer>

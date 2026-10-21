@@ -1,0 +1,228 @@
+---
+title: Ana sayfa
+description: Karaman'ın tarihî duraklarını gez, QR kodu okut, eski kelimelerin anlamını bul, puan ve rozet topla. Kelime Avcısı iOS ve Android için.
+path: /
+---
+<section class="hero" aria-labelledby="hero-baslik">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow reveal">Karaman seni bekliyor</p>
+      <h1 id="hero-baslik" class="hero__title reveal">Karaman’da <span class="hl">kelime avına</span> çık!</h1>
+      <p class="lead reveal">Kelime Avcısı, şehrin tarihî duraklarını sırayla gezdiğin bir keşif oyunu. Her durakta QR kodu okut, karşına çıkan tarihî kelimenin anlamını bul, puanları ve rozetleri topla.</p>
+      <div class="hero__actions reveal">
+        {{{storeButtons}}}
+      </div>
+      <ul class="hero__facts reveal" aria-label="Öne çıkanlar">
+        <li>Şifresiz, hesapsız başla</li>
+        <li>Tarihî duraklarda keşif</li>
+        <li>Rozet koleksiyonu</li>
+      </ul>
+    </div>
+
+    <div class="stage" data-tilt aria-hidden="true">
+      <div class="stage__inner">
+        <div class="blob blob--mint"></div>
+        <div class="blob blob--sun"></div>
+
+        <div class="phone phone--back phone--left">
+          <div class="phone__screen"><picture><source srcset="/assets/img/screens/soru.webp" type="image/webp"><img src="/assets/img/screens/soru.jpg" alt="" width="600" height="1304" fetchpriority="low"></picture></div>
+        </div>
+        <div class="phone phone--back phone--right">
+          <div class="phone__screen"><picture><source srcset="/assets/img/screens/harita.webp" type="image/webp"><img src="/assets/img/screens/harita.jpg" alt="" width="600" height="1304" fetchpriority="low"></picture></div>
+        </div>
+        <div class="phone phone--front">
+          <div class="phone__screen"><picture><source srcset="/assets/img/screens/kesfet.webp" type="image/webp"><img src="/assets/img/screens/kesfet.jpg" alt="" width="600" height="1304" fetchpriority="high"></picture></div>
+        </div>
+
+        <div class="chip chip--word"><span class="chip__glyph">Âb</span><span class="chip__eq">= Su</span></div>
+        <div class="chip chip--points"><span class="chip__star">★</span><span><b>+100</b> puan</span></div>
+        <div class="chip chip--qr">
+          <svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M3 3h7v7H3V3zm2 2v3h3V5H5zm9-2h7v7h-7V3zm2 2v3h3V5h-3zM3 14h7v7H3v-7zm2 2v3h3v-3H5zm9-2h2v2h-2v-2zm2 2h2v2h-2v-2zm2-2h3v2h-3v-2zm-4 4h2v3h-2v-3zm4 0h3v3h-2v-1h-1v-2z"/></svg>
+        </div>
+        <div class="chip chip--badge"><span class="medal">I</span><span><small>Rozet</small><b>İlk İz</b></span></div>
+        <img class="stage__owl" src="/assets/img/puhu.png" alt="" width="253" height="270">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="route" aria-labelledby="rota-baslik">
+  <div class="wrap">
+    <div class="route__card reveal">
+      <div class="route__head">
+        <p class="eyebrow">Macera yolculuğun</p>
+        <h2 id="rota-baslik">Durak durak büyüyen bir rota</h2>
+        <p>Duraklar sırayla açılır. Birini tamamladığında bir sonrakinin kilidi kalkar.{{#if moreStopsComing}} Rota büyüyor: yeni duraklar eklendikçe uygulamada görünür.{{/if}}</p>
+      </div>
+      <ol class="stops" tabindex="0" aria-label="Rotadaki duraklar, yatay kaydırılabilir">
+        {{{stopsHtml}}}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ozellikler" aria-labelledby="ozellik-baslik">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <p class="eyebrow">Neler var?</p>
+      <h2 id="ozellik-baslik">Gez, okut, öğren, topla.</h2>
+      <p class="section__lead">Kelime Avcısı tarihî mekânları bir oyun rotasına çevirir. Her durak, Türkçenin eski bir kelimesini saklar.</p>
+    </header>
+
+    <div class="bento">
+      <article class="card card--teal card--wide reveal">
+        <div class="card__text">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h7v7H3V3zm2 2v3h3V5H5zm9-2h7v7h-7V3zm2 2v3h3V5h-3zM3 14h7v7H3v-7zm2 2v3h3v-3H5zm9-2h2v2h-2v-2zm2 2h2v2h-2v-2zm2-2h3v2h-3v-2zm-4 4h2v3h-2v-3zm4 0h3v3h-2v-1h-1v-2z"/></svg></span>
+          <h3>Her durak kendi koduyla açılır</h3>
+          <p>Durağa vardığında oradaki QR kodu okut. Kod ve durak sırası sunucuda doğrulanır; kamera açılamazsa kodu elle de girebilirsin.</p>
+        </div>
+        <div class="card__shot">
+          <picture><source srcset="/assets/img/screens/qr.webp" type="image/webp"><img src="/assets/img/screens/qr.jpg" alt="Durağın QR Kodu ekranı: “Kodu okut, kelimeyi keşfet!” başlığı ve Kamerayı Aç butonu" width="600" height="1304" loading="lazy"></picture>
+        </div>
+      </article>
+
+      <article class="card card--butter reveal">
+        <div class="word3d" aria-hidden="true">Âb</div>
+        <h3>Tarihî kelimeler</h3>
+        <p>“Âb” ne demek? Dört seçenekten doğru anlamı bul. Her soruda en fazla 100 puan kazanırsın.</p>
+      </article>
+
+      <article class="card card--mint reveal">
+        <span class="card__icon card__icon--ink" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zm0 0v14m6-12v14"/></svg></span>
+        <h3>Keşif haritası</h3>
+        <p>Durakları harita üzerinde gör, sıradaki iz için yürüyüş yol tarifini aç.</p>
+      </article>
+
+      <article class="card card--pink reveal">
+        <div class="medals" aria-hidden="true"><span>I</span><span>II</span><span>III</span></div>
+        <h3>Rozet koleksiyonu</h3>
+        <p>“İlk İz”den “Kelime Avcısı”na kadar rozetleri topla, profilinde puanını ve keşfettiğin durakları izle.</p>
+      </article>
+
+      <article class="card card--plain reveal">
+        <span class="card__icon card__icon--ink" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 3a4 4 0 0 1 4 4v3M8 10V7a4 4 0 0 1 6.5-3.1M5 10h14v11H5z"/></svg></span>
+        <h3>Hesapsız başla</h3>
+        <p>Şifre veya e-posta gerekmez. İlerlemen anonim oturumunla bulutta saklanır. İstersen Apple ya da Google ile giriş yap.</p>
+      </article>
+
+      <article class="card card--plain card--strip reveal">
+        <span class="card__icon card__icon--ink" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0M12 19.5h.01M3 3l18 18"/></svg></span>
+        <div><h3>Bağlantı koptuğunda da rota sende</h3>
+        <p>İnternet yokken son kaydedilen rota görünmeye devam eder. Bağlantı gelince güncellenir.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="ekranlar" aria-labelledby="ekran-baslik">
+  <div class="wrap">
+    <header class="section__head section__head--row reveal">
+      <div>
+        <p class="eyebrow">Uygulamadan kareler</p>
+        <h2 id="ekran-baslik">Puhu ile keşfe çık.</h2>
+      </div>
+      <div class="gallery__nav">
+        <button class="round-btn" type="button" data-gallery-prev aria-label="Önceki ekran"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m15 5-7 7 7 7"/></svg></button>
+        <button class="round-btn" type="button" data-gallery-next aria-label="Sonraki ekran"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></svg></button>
+      </div>
+    </header>
+  </div>
+  <ul class="gallery" data-gallery tabindex="0" aria-label="Uygulama ekran görüntüleri, yatay kaydırılabilir">
+    <li class="shot">
+      <div class="phone phone--flat"><div class="phone__screen"><picture><source srcset="/assets/img/screens/giris.webp" type="image/webp"><img src="/assets/img/screens/giris.jpg" alt="Giriş ekranı: Puhu maskotu, Kelime Avcısı başlığı, Apple ve Google ile giriş ile Hesapsız Keşfe Başla butonları" width="600" height="1304" loading="lazy"></picture></div></div>
+      <p class="shot__cap"><b>Giriş</b> Şifresiz başla</p>
+    </li>
+    <li class="shot">
+      <div class="phone phone--flat"><div class="phone__screen"><picture><source srcset="/assets/img/screens/gorev.webp" type="image/webp"><img src="/assets/img/screens/gorev.jpg" alt="Sıradaki macera kartı: Karaman Kalesi fotoğrafı, açıklaması, QR Kodu Okut ve Rotayı Gör butonları" width="600" height="1304" loading="lazy"></picture></div></div>
+      <p class="shot__cap"><b>Keşfet</b> Sıradaki maceran</p>
+    </li>
+    <li class="shot">
+      <div class="phone phone--flat"><div class="phone__screen"><picture><source srcset="/assets/img/screens/harita.webp" type="image/webp"><img src="/assets/img/screens/harita.jpg" alt="Keşif haritası: Karaman şehir haritasında duraklar ve Yol Tarifi butonu" width="600" height="1304" loading="lazy"></picture></div></div>
+      <p class="shot__cap"><b>Harita</b> Rotandaki sonraki iz</p>
+    </li>
+    <li class="shot">
+      <div class="phone phone--flat"><div class="phone__screen"><picture><source srcset="/assets/img/screens/soru.webp" type="image/webp"><img src="/assets/img/screens/soru.jpg" alt="Soru ekranı: “Âb” kelimesi ve Ateş, Su, Toprak, Rüzgâr seçenekleri" width="600" height="1304" loading="lazy"></picture></div></div>
+      <p class="shot__cap"><b>Soru</b> Kelimenin anlamını bul</p>
+    </li>
+    <li class="shot">
+      <div class="phone phone--flat"><div class="phone__screen"><picture><source srcset="/assets/img/screens/gunluk.webp" type="image/webp"><img src="/assets/img/screens/gunluk.jpg" alt="Keşif günlüğü: dört durağın durumu, tamamlandı, aktif ve kilitli filtreleri" width="600" height="1304" loading="lazy"></picture></div></div>
+      <p class="shot__cap"><b>Görevler</b> Keşif günlüğün</p>
+    </li>
+    <li class="shot">
+      <div class="phone phone--flat"><div class="phone__screen"><picture><source srcset="/assets/img/screens/profil.webp" type="image/webp"><img src="/assets/img/screens/profil.jpg" alt="Profil ekranı: toplam puan, keşfedilen durak sayısı ve rozet koleksiyonu" width="600" height="1304" loading="lazy"></picture></div></div>
+      <p class="shot__cap"><b>Profil</b> Kaşif köşen</p>
+    </li>
+  </ul>
+</section>
+
+<section class="section" id="nasil-calisir" aria-labelledby="nasil-baslik">
+  <div class="wrap">
+    <header class="section__head section__head--center reveal">
+      <p class="eyebrow">Nasıl çalışır?</p>
+      <h2 id="nasil-baslik">Üç adımda kelime avı</h2>
+    </header>
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__num" aria-hidden="true">1</span>
+        <h3>Durağa git</h3>
+        <p>Uygulamada sıradaki macerana bak, haritadan yürüyüş yol tarifini aç ve durağa ulaş.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num step__num--sun" aria-hidden="true">2</span>
+        <h3>QR kodu okut</h3>
+        <p>Duraktaki kodu kamerayla okut. Doğru durak ve doğru sıra ise kelime açılır.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num step__num--coral" aria-hidden="true">3</span>
+        <h3>Soruyu çöz, rozet kazan</h3>
+        <p>Tarihî kelimenin anlamını seç. Puanını topla, bir sonraki durağın kilidini aç.</p>
+      </li>
+    </ol>
+
+    <aside class="score reveal" aria-label="Puanlama kuralları">
+      <img src="/assets/img/puhu.png" alt="" width="84" height="90" loading="lazy">
+      <div>
+        <h3>Puanlama</h3>
+        <p>Her soruda en fazla <b>100 puan</b>. İpucu <b>−20</b>, her yanlış cevap <b>−10</b>. En düşük puan <b>0</b>.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--tint" id="sss" aria-labelledby="sss-baslik">
+  <div class="wrap wrap--narrow">
+    <header class="section__head section__head--center reveal">
+      <p class="eyebrow">Sık sorulan sorular</p>
+      <h2 id="sss-baslik">Merak ettiklerin</h2>
+    </header>
+    {{{faqHtml}}}
+  </div>
+</section>
+
+<section class="section" id="indir" aria-labelledby="indir-baslik">
+  <div class="wrap">
+    <div class="cta reveal">
+      <img class="cta__owl" src="/assets/img/puhu.png" alt="" width="253" height="270" loading="lazy">
+      <div class="cta__copy">
+        <h2 id="indir-baslik">Puhu seni bekliyor.</h2>
+        {{#if anyStore}}<p>Uygulamayı indir, ilk durağa doğru yola çık.</p>{{else}}<p>Kelime Avcısı mağazalarda çok yakında. Yayınlandığında indirme bağlantıları burada olacak.</p>{{/if}}
+        {{{storeButtons}}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--compact" aria-labelledby="destek-baslik">
+  <div class="wrap">
+    <div class="help reveal">
+      <div>
+        <h2 id="destek-baslik">Bir sorun mu var?</h2>
+        <p>Kod okutma, giriş veya ilerlemenle ilgili her konuda bize yazabilirsin. Sana {{contact.responseTime}} dönüş yaparız.</p>
+      </div>
+      <div class="help__actions">
+        <a class="btn btn--primary" href="/destek/">Destek sayfası</a>
+        <a class="btn btn--ghost" href="mailto:{{contact.email}}">{{contact.email}}</a>
+      </div>
+    </div>
+  </div>
+</section>

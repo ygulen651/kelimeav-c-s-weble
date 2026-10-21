@@ -1,0 +1,9 @@
+dist/
+.playwright-mcp/
+.DS_Store
+node_modules/
+
+# yerel araç dosyaları
+.claude-flow/
+.swarm/
+ruvector.db

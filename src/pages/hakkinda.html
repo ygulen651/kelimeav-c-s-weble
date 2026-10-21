@@ -1,0 +1,51 @@
+---
+title: Hakkında
+description: Kelime Avcısı nedir, kim geliştiriyor ve Karaman'ın tarihî duraklarını neden bir kelime oyunu rotasına çevirdik.
+path: /hakkinda/
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Hakkında</p>
+    <h1>Şehri gez, dili keşfet.</h1>
+    <p>Kelime Avcısı, Karaman'ın tarihî mekânlarını ve Türkçenin eski kelimelerini aynı rotada buluşturan bir keşif oyunudur.</p>
+  </div>
+</section>
+
+<div class="wrap about-grid">
+  <article class="doc">
+    <h2>Uygulama</h2>
+    <p>Kelime Avcısı'nda oyuncular şehirdeki tarihî durakları sırayla ziyaret eder. Her durakta bir QR kodu okutulur ve karşılarına tarihî bir kelime çıkar; görev, o kelimenin anlamını dört seçenek arasından bulmaktır. Doğru cevaplar puan kazandırır, tamamlanan duraklar rozet koleksiyonunu büyütür ve bir sonraki durağın kilidini açar.</p>
+    <p>Rotadaki duraklar:</p>
+    <ol>{{{stopsListHtml}}}</ol>
+    {{#if moreStopsComing}}<p>Rota büyümeye devam ediyor; yeni duraklar eklendikçe uygulamada sırayla açılır.</p>{{/if}}
+    <p>Oyuncuya yol gösteren maskotumuz <strong>Puhu</strong>, atkılı ve meraklı bir baykuştur.</p>
+
+    <h2>Neden Karaman?</h2>
+    <p>Karaman, Türkçeyi divanda ve resmî yazışmalarda kullanılacak dil olarak ilan eden 1277 tarihli Karamanoğlu Mehmet Bey fermanıyla anılan bir şehirdir. Kelime Avcısı, bu mirası şehrin sokaklarında yürüyerek, oynayarak hatırlatmak için tasarlandı.</p>
+    <p><mark class="dogrula">Projenin hikâyesini, kim için ve hangi kapsamda (ör. okul projesi, belediye etkinliği, kişisel proje) geliştirildiğini ve varsa destekçi/iş birliği yapılan kurumları buraya yazın.</mark></p>
+
+    <h2>Geliştirenler</h2>
+    <p>Kelime Avcısı, <a href="https://kartap.org/" rel="noopener">KARTAP — Karaman Tanıtım ve Turizm Derneği</a> ile <a href="https://www.entekdigital.com/" rel="noopener">Entek Digital</a> tarafından geliştirildi.</p>
+
+    <h2>İlkelerimiz</h2>
+    <ul>
+      <li><strong>Hesapsız oyun:</strong> Oynamak için şifre veya e-posta gerekmez.</li>
+      <li><strong>Az veri:</strong> Yalnızca oyunun çalışması için gereken veriyi işleriz. Ayrıntılar <a href="/gizlilik/">Gizlilik Politikası</a>'nda.</li>
+      <li><strong>Kaynak gösterme:</strong> Mekân fotoğrafları Kültür Portalı'ndan, fotoğrafçılarının adlarıyla; harita verileri OpenStreetMap katkıcılarından alınır.</li>
+    </ul>
+  </article>
+
+  <aside class="about-aside">
+    <dl class="fact">
+      <dt>Geliştirici</dt>
+      <dd>{{developer.name}}</dd>
+      <dt>Konum</dt>
+      <dd>{{developer.city}}</dd>
+      <dt>Platformlar</dt>
+      <dd>iOS ve Android</dd>
+      <dt>İletişim</dt>
+      <dd><a href="mailto:{{contact.email}}">{{contact.email}}</a></dd>
+    </dl>
+    <a class="btn btn--primary" href="/#indir">Uygulamayı indir</a>
+  </aside>
+</div>

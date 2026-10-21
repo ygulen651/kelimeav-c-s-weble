@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{site.lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.fullTitle}}</title>
+  <meta name="description" content="{{page.description}}">
+{{#if page.noindex}}  <meta name="robots" content="noindex">{{else}}  <link rel="canonical" href="{{page.canonical}}">{{/if}}
+  <meta name="theme-color" content="{{site.themeColor}}">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="{{site.name}}">
+  <meta property="og:title" content="{{page.fullTitle}}">
+  <meta property="og:description" content="{{page.description}}">
+  <meta property="og:url" content="{{page.canonical}}">
+  <meta property="og:image" content="{{site.url}}/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kelime Avcısı uygulamasının ekranları ve maskotu Puhu">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
+{{#if page.isHome}}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"{{site.name}}","description":"{{site.description}}","applicationCategory":"EducationalApplication","operatingSystem":"iOS, Android","inLanguage":"tr","url":"{{site.url}}/","publisher":{"@type":"Organization","name":"{{developer.name}}","email":"{{contact.email}}"}}
+  </script>
+{{/if}}
+</head>
+<body class="{{#if page.isLegal}}is-legal{{/if}}">
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+  {{> header}}
+  <main id="icerik" tabindex="-1">
+{{{content}}}
+  </main>
+  {{> footer}}
+</body>
+</html>

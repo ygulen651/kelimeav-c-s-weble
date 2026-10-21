@@ -1,0 +1,137 @@
+---
+title: Gizlilik Politikası ve KVKK Aydınlatma Metni
+description: Kelime Avcısı uygulamasının ve web sitesinin hangi verileri, hangi amaçla işlediği; kullanılan hizmetler, saklama süreleri ve KVKK kapsamındaki hakların.
+path: /gizlilik/
+legal: true
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Gizlilik / KVKK</p>
+    <h1>Gizlilik Politikası</h1>
+    <p>Bu metin, Kelime Avcısı mobil uygulamasının ve bu web sitesinin kişisel verileri nasıl işlediğini 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında açıklar.</p>
+    <p class="updated">Son güncelleme: {{lastUpdatedText}}</p>
+  </div>
+</section>
+
+<div class="wrap doc-layout">
+  <nav class="toc" aria-label="İçindekiler">
+    <h2>İçindekiler</h2>
+    <ol>
+      <li><a href="#ozet">Kısaca</a></li>
+      <li><a href="#sorumlu">Veri sorumlusu</a></li>
+      <li><a href="#uygulama-verileri">Uygulamada işlenen veriler</a></li>
+      <li><a href="#amaclar">Amaçlar ve hukuki sebepler</a></li>
+      <li><a href="#hizmetler">Kullanılan hizmetler</a></li>
+      <li><a href="#paylasim">Paylaşım ve aktarım</a></li>
+      <li><a href="#saklama">Saklama süreleri</a></li>
+      <li><a href="#guvenlik">Güvenlik</a></li>
+      <li><a href="#cocuklar">Çocukların gizliliği</a></li>
+      <li><a href="#site">Web sitesinin gizliliği</a></li>
+      <li><a href="#haklar">Hakların ve başvuru</a></li>
+      <li><a href="#degisiklik">Değişiklikler</a></li>
+    </ol>
+  </nav>
+
+  <article class="doc">
+    <h2 id="ozet">1. Kısaca</h2>
+    <ul>
+      <li>Uygulamayı şifre veya e-posta girmeden, <strong>anonim oturumla</strong> kullanabilirsin. İstersen Apple veya Google hesabınla da giriş yapabilirsin.</li>
+      <li>Oyun ilerlemen (tamamlanan duraklar, puanlar, rozetler) ve profilinde yazdığın ad <strong>bulutta</strong> saklanır.</li>
+      <li>Profil adın ve ilerlemen, etkinliği yürüten <strong>yöneticilerin panelinde</strong> görünür.</li>
+      <li>Kamera <strong>yalnızca QR kodu okutma ekranında</strong>, kodu okumak için kullanılır.</li>
+      <li>Uygulamada <mark class="dogrula">reklam, reklam takibi veya ücretli özellik bulunmaz</mark>.</li>
+      <li>Bu web sitesi <strong>çerez, analiz veya izleme aracı kullanmaz</strong>.</li>
+    </ul>
+
+    <h2 id="sorumlu">2. Veri sorumlusu</h2>
+    <p>Kişisel verilerin, veri sorumlusu sıfatıyla <strong>{{developer.legalName}}</strong> ({{developer.name}}) tarafından işlenir.</p>
+    <ul>
+      <li>Adres: {{developer.address}}</li>
+      <li>E-posta: <a href="mailto:{{contact.kvkkEmail}}">{{contact.kvkkEmail}}</a></li>
+    </ul>
+    <p><mark class="dogrula">Uygulama bir kurum (ör. belediye, okul, müze veya proje ortağı) adına yürütülüyorsa veri sorumlusunun kim olduğu ve varsa veri işleyenler burada açıkça yazılmalıdır.</mark></p>
+
+    <h2 id="uygulama-verileri">3. Uygulamada işlenen veriler</h2>
+    <table>
+      <thead><tr><th scope="col">Veri</th><th scope="col">Ne zaman, nasıl</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Anonim kullanıcı kimliği</strong></td><td>“Hesapsız Keşfe Başla”ya dokunduğunda rastgele bir oturum kimliği oluşturulur. Bu kimlik ilerlemeni bulutta saklamak için kullanılır.</td></tr>
+        <tr><td><strong>Apple veya Google hesabı bilgileri</strong></td><td>Yalnızca bu seçeneklerle giriş yaparsan: hizmet sağlayıcının verdiği kullanıcı kimliği <mark class="dogrula">ve e-posta adresi / ad (hangi alanların saklandığını belirtin; Apple'da “E-postamı Gizle” seçeneği kullanılabilir)</mark>.</td></tr>
+        <tr><td><strong>Profil adı</strong></td><td>Profil ekranında yazdığın ad. Yöneticilerin panelinde ilerlemenle birlikte görünür. Gerçek adını yazmak zorunda değilsin.</td></tr>
+        <tr><td><strong>Oyun ilerlemesi</strong></td><td>Tamamlanan ve açılan duraklar, verdiğin cevaplar, ipucu kullanımı, puanlar, rozetler ve bunların zaman bilgisi.</td></tr>
+        <tr><td><strong>QR kod içeriği</strong></td><td>Okuttuğun veya elle girdiğin kod metni, doğru durak ve sıra olup olmadığının kontrolü için sunucuya gönderilir.</td></tr>
+        <tr><td><strong>Kamera görüntüsü</strong></td><td>Yalnızca QR ekranında kullanılır. <mark class="dogrula">Görüntü cihazında işlenir; fotoğraf veya video kaydedilmez ve sunucuya gönderilmez.</mark></td></tr>
+        <tr><td><strong>Konum</strong></td><td><mark class="dogrula">Uygulama haritada konumunu göstermek için cihaz konumunu kullanıyorsa: yalnızca uygulama açıkken ve izin verdiğinde, harita üzerinde gösterim için kullanılır; sunucuya kaydedilmez. Konum hiç kullanılmıyorsa bu satırı kaldırın.</mark></td></tr>
+        <tr><td><strong>Cihazda saklanan veriler</strong></td><td>Bağlantı yokken gösterilebilmesi için son rota bilgisi ve oturum bilgisi cihazında saklanır.</td></tr>
+        <tr><td><strong>Teknik veriler</strong></td><td><mark class="dogrula">Hata raporlama veya performans izleme kullanılıyorsa: cihaz modeli, işletim sistemi sürümü, uygulama sürümü ve hata kayıtları. Kullanılmıyorsa bu satırı kaldırın.</mark></td></tr>
+      </tbody>
+    </table>
+    <p>Uygulama; rehberine, fotoğraf arşivine, mikrofonuna veya sağlık verilerine erişmez. <mark class="dogrula">Bu ifadeyi uygulamanın istediği izinlerle karşılaştırın.</mark></p>
+
+    <h2 id="amaclar">4. İşleme amaçları ve hukuki sebepler</h2>
+    <table>
+      <thead><tr><th scope="col">Amaç</th><th scope="col">Hukuki sebep (KVKK m.5)</th></tr></thead>
+      <tbody>
+        <tr><td>Oturum açmak, ilerlemeni kaydetmek ve cihazlar arasında korumak</td><td>Sözleşmenin kurulması ve ifası (m.5/2-c)</td></tr>
+        <tr><td>QR kodlarını ve durak sırasını doğrulamak, puan ve rozet hesaplamak</td><td>Sözleşmenin kurulması ve ifası (m.5/2-c)</td></tr>
+        <tr><td>Profil adını ve ilerlemeyi etkinliği yürüten yöneticilere göstermek</td><td><mark class="dogrula">Meşru menfaat (m.5/2-f) veya açık rıza (m.5/1) — hangisine dayandığınızı belirleyin</mark></td></tr>
+        <tr><td>Destek taleplerini yanıtlamak</td><td>Meşru menfaat (m.5/2-f)</td></tr>
+        <tr><td>Hizmetin güvenliğini sağlamak, kötüye kullanımı önlemek</td><td>Meşru menfaat (m.5/2-f), hukuki yükümlülük (m.5/2-ç)</td></tr>
+      </tbody>
+    </table>
+    <p>Verilerin reklam, profilleme veya satış amacıyla kullanılmaz.</p>
+
+    <h2 id="hizmetler">5. Kullanılan hizmetler</h2>
+    <ul>
+      <li><strong>Sign in with Apple</strong> (Apple Inc.) — yalnızca Apple ile giriş yaparsan.</li>
+      <li><strong>Google ile Oturum Açma</strong> (Google LLC) — yalnızca Google ile giriş yaparsan.</li>
+      <li><strong>OpenStreetMap</strong> harita verileri — harita karoları yüklenirken cihazının IP adresi harita sunucusuna iletilir. <mark class="dogrula">Karoların hangi sunucudan yüklendiğini (OpenStreetMap Vakfı sunucuları veya başka bir sağlayıcı) belirtin.</mark></li>
+      <li><mark class="dogrula">Kimlik doğrulama ve bulut veritabanı hizmeti: hizmetin gerçek adını ve sağlayıcısını yazın (ör. “Firebase Authentication ve Cloud Firestore — Google LLC”) ve verilerin hangi bölgede tutulduğunu belirtin.</mark></li>
+      <li><mark class="dogrula">Varsa hata raporlama, analiz veya bildirim hizmetleri (ör. Firebase Crashlytics, Firebase Analytics, Firebase Cloud Messaging). Hiçbiri yoksa bu satırı kaldırın.</mark></li>
+    </ul>
+    <p>“Yol Tarifi”ne dokunduğunda cihazındaki harita uygulaması açılır; bu uygulamanın veri işleme faaliyetleri kendi gizlilik politikasına tabidir. <mark class="dogrula">Yol tarifinin hangi uygulamayı/servisi açtığını kontrol edin.</mark></p>
+    <p>Uygulamadaki mekân fotoğrafları Kültür Portalı'ndan alınmıştır ve fotoğrafçılarının adlarıyla gösterilir.</p>
+
+    <h2 id="paylasim">6. Paylaşım ve yurt dışına aktarım</h2>
+    <p>Kişisel verilerin; yalnızca yukarıdaki hizmet sağlayıcılarla, hizmetin çalışması için gerektiği ölçüde ve etkinliği yürüten yöneticilerle (profil adı ve ilerleme) paylaşılır. Yasal bir zorunluluk olduğunda yetkili kamu kurumlarıyla paylaşılabilir. Veriler satılmaz.</p>
+    <p><mark class="dogrula">Bulut hizmeti sunucuları Türkiye dışındaysa kişisel veriler yurt dışına aktarılmış olur. Bu aktarımın KVKK m.9 kapsamında hangi mekanizmaya (ör. standart sözleşme, açık rıza) dayandığını belirtin.</mark></p>
+    <p><mark class="dogrula">Yönetici panelini kimlerin (ör. öğretmenler, etkinlik görevlileri) görebildiğini yazın.</mark></p>
+
+    <h2 id="saklama">7. Saklama süreleri</h2>
+    <ul>
+      <li>Hesap ve ilerleme verileri, hesabın silinmesini talep edene kadar saklanır. <mark class="dogrula">Uzun süre kullanılmayan anonim hesaplar için bir silme süresi varsa yazın (ör. 12 ay hareketsizlikten sonra).</mark></li>
+      <li>Silme talebinden sonra veriler <mark class="dogrula">30 gün</mark> içinde sistemlerimizden silinir; yedeklerden en geç <mark class="dogrula">90 gün</mark> içinde kalkar.</li>
+      <li>Destek yazışmaları, talebin kapanmasından sonra <mark class="dogrula">2 yıl</mark> saklanır.</li>
+      <li>Uygulamayı cihazından sildiğinde cihazda tutulan veriler de silinir. Anonim oturumla oynuyorsan, uygulamayı silmek bulut hesabına yeniden erişmeni engelleyebilir.</li>
+    </ul>
+
+    <h2 id="guvenlik">8. Güvenlik</h2>
+    <p>Uygulama ile sunucular arasındaki iletişim şifreli bağlantı (HTTPS/TLS) üzerinden yapılır. Verilere erişim yetkiyle sınırlandırılır; yönetici paneline yalnızca yetkili kişiler girebilir. Kod ve durak sırası doğrulaması sunucuda yapılır. Hiçbir sistem tam güvenlik garantisi veremese de verilerini korumak için makul teknik ve idari tedbirleri alırız.</p>
+
+    <h2 id="cocuklar">9. Çocukların gizliliği</h2>
+    <p>Kelime Avcısı eğitici bir keşif oyunudur ve öğrenciler tarafından kullanılabilir. Bu nedenle:</p>
+    <ul>
+      <li>Oynamak için e-posta, telefon numarası veya şifre istenmez; anonim oturum yeterlidir.</li>
+      <li>Profil adı olarak gerçek ad yazmak zorunlu değildir. Çocukların takma ad kullanmasını öneririz.</li>
+      <li>Uygulamada <mark class="dogrula">reklam ve reklam amaçlı takip yoktur</mark>.</li>
+    </ul>
+    <p><mark class="dogrula">Hedef yaş grubunu belirtin. Uygulama 13 yaşından (veya mağaza politikalarındaki yaş sınırından) küçük çocuklara yönelikse veli onayı süreci, App Store “Çocuklar” kategorisi ve Google Play “Aileler” politikası gereklilikleri ayrıca değerlendirilmelidir. Okul etkinliği olarak kullanılıyorsa velilerin bilgilendirilme şeklini yazın.</mark></p>
+    <p>Bir velinin, çocuğuna ait verilerin silinmesini istemesi durumunda <a href="/hesap-silme/">Hesap ve Veri Silme</a> sayfasındaki adımlar izlenebilir.</p>
+
+    <h2 id="site">10. Bu web sitesinin gizliliği</h2>
+    <ul>
+      <li>Bu site <strong>çerez kullanmaz</strong>; analiz, reklam veya sosyal medya izleme aracı içermez. Bu nedenle çerez onayı istenmez.</li>
+      <li>Yazı tipleri ve görseller sitenin kendi sunucusundan yüklenir; ziyaretin sırasında üçüncü taraf sunuculara istek yapılmaz.</li>
+      <li>Site barındırma hizmeti, güvenlik ve işletim amacıyla standart sunucu kayıtları (IP adresi, tarih-saat, istenen sayfa, tarayıcı bilgisi) tutabilir. <mark class="dogrula">Barındırma sağlayıcısının adını ve kayıtların saklama süresini yazın.</mark></li>
+      <li>Destek formunu kullanırsan yazdığın ad, e-posta adresi ve mesaj yalnızca talebini yanıtlamak için kullanılır. {{#if hasFormEndpoint}}Form, mesajını bize iletmek için <mark class="dogrula">form hizmeti sağlayıcısının adını yazın</mark> üzerinden gönderilir.{{else}}Form, mesajını senin e-posta uygulamanda hazırlar; gönderim kendi e-posta hizmetin üzerinden yapılır.{{/if}}</li>
+    </ul>
+
+    <h2 id="haklar">11. KVKK kapsamındaki hakların ve başvuru</h2>
+    <p>KVKK'nın 11. maddesi uyarınca; verilerinin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, şartları oluştuğunda silinmesini veya yok edilmesini isteme, bu işlemlerin aktarılan üçüncü kişilere bildirilmesini isteme, otomatik sistemlerle analiz sonucu aleyhine bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğradıysan zararın giderilmesini talep etme haklarına sahipsin.</p>
+    <p>Başvurunu <a href="mailto:{{contact.kvkkEmail}}">{{contact.kvkkEmail}}</a> adresine, kimliğini doğrulamamıza yardımcı olacak bilgilerle (profil adın, giriş yöntemin ve varsa uygulamadaki kullanıcı kimliğin) gönderebilirsin. Başvurular en geç <strong>30 gün</strong> içinde ücretsiz olarak sonuçlandırılır. Yanıtımızdan memnun kalmazsan Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsin.</p>
+
+    <h2 id="degisiklik">12. Değişiklikler</h2>
+    <p>Bu politikayı uygulamada veya veri işleme biçimimizde değişiklik olduğunda güncelleriz. Güncel sürüm her zaman bu adreste yayımlanır ve sayfanın başındaki “Son güncelleme” tarihi değiştirilir. Önemli değişiklikleri uygulama içinden de duyururuz.</p>
+    <p>Sorun mu var? <a href="/destek/">Destek sayfası</a> üzerinden veya <a href="mailto:{{contact.email}}">{{contact.email}}</a> adresinden bize ulaşabilirsin.</p>
+  </article>
+</div>
